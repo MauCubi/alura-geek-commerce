@@ -99,7 +99,7 @@
 
     width: 100%;
     height: 352px;    
-    background-image: url('./img/banner-image.png');
+    background-image: url('../img/banner-image.png');
     background-size: cover;
 }
 
