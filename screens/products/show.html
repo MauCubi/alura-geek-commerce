@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">    
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/inputs.css">
+    <link rel="stylesheet" href="/css/textarea.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/product-index.css">
+    <link rel="stylesheet" href="/css/product-show.css">
+    
+    <title>Products AluraGeek</title>
+
+</head>
+
+<header class="cabecero">
+    <nav class="cabecero__nav">
+        <div class="cabecero__izq">
+            <a href="/index.html"><img class="cabecero__img" src="/img/Logo.png" alt="LogoCabecera"></a>
+            <!-- <i class="fa-solid fa-magnifying-glass cabecero__lupa"></i>
+            <input class="cabecero__busqueda" type="text" placeholder="¿Qué desea buscar?"> -->
+        </div>       
+        <div class="cabecero__der">
+            
+        </div> 
+    </nav>    
+</header>
+
+<body>
+
+    <section class="producto">
+        <div class="producto__show">            
+            <img src="" class="producto__show__img">            
+            <div class="producto__show__details">
+                <h2 class="producto__show__title"></h2>
+                <p class="producto__show__price"></p>
+                <p class="producto__show__desc"></p>                
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__linea">
+            <div class="productos__linea__top">
+                <h2>Productos similares</h2>                
+            </div>
+            <div class="productos__linea__lista">
+                <!-- <div class="productos__linea__lista__item">
+                    <img src="/img/productos/star-wars4.png" >
+                    <p class="item__nombre">Producto XYZ</p>
+                    <p class="item__precio">$ 60,00</p>
+                    <a href="#" class="item__link">Ver Producto</a>
+                </div>
+
+                <div class="productos__linea__lista__item">
+                    <img src="/img/productos/star-wars5.png" >
+                    <p class="item__nombre">Producto XYZ</p>
+                    <p class="item__precio">$ 60,00</p>
+                    <a href="#" class="item__link">Ver Producto</a>
+                </div>
+
+                <div class="productos__linea__lista__item">
+                    <img src="/img/productos/star-wars6.png" >
+                    <p class="item__nombre">Producto XYZ</p>
+                    <p class="item__precio">$ 60,00</p>
+                    <a href="#" class="item__link">Ver Producto</a>
+                </div>
+
+                <div class="productos__linea__lista__item">
+                    <img src="/img/productos/star-wars3.png" >
+                    <p class="item__nombre">Producto XYZ</p>
+                    <p class="item__precio">$ 60,00</p>
+                    <a href="#" class="item__link">Ver Producto</a>
+                </div>
+
+                <div class="productos__linea__lista__item">
+                    <img src="/img/productos/star-wars.png" >
+                    <p class="item__nombre">Producto XYZ</p>
+                    <p class="item__precio">$ 60,00</p>
+                    <a href="#" class="item__link">Ver Producto</a>
+                </div>
+
+                <div class="productos__linea__lista__item">
+                    <img src="/img/productos/star-wars2.png" >
+                    <p class="item__nombre">Producto XYZ</p>
+                    <p class="item__precio">$ 60,00</p>
+                    <a href="#" class="item__link">Ver Producto</a>
+                </div> -->
+            </div>            
+        </div>        
+
+
+    </section>
+
+
+    <!-- <script src="/js/app.js"></script> -->
+    <script type="module" src="/controllers/productos-controller.js"></script>
+    <script type="module" src="/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/a2a09fc638.js" crossorigin="anonymous"></script>
+</body>
+
+<footer class="pie__pagina">
+    <div class="pie__pagina__top">
+        <div class="pie__pagina__top__content">
+            <img src="/img/Logo.png">
+            <div class="pie__pagina__top__links">
+                <a href="#">Quienes somos</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anúncie aquí</a>
+            </div>
+
+            <div class="pie__pagina__top__contacto">
+                <p>Hable con nosotros</p>
+                <div class="pie__pagina__top__contacto__form">     
+
+                    <div class="input__container">
+                        <input class="formcontacto__input" type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="50" 
+                        required data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea__container">
+                        <textarea class="textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"
+                        required data-tipo="mensaje" maxlength="200"></textarea>
+                        <label class="textarea-label" for="mensaje">Escribe tu mensaje</label>
+                        <span class="textarea-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="pie__pagina__bot">
+        <p>&copy; Desarrollado por Mauro Cubilla - 2021</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product-index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link rel="stylesheet" href="css/textarea.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+    <title>AluraGeek</title>
+
+</head>
+
+<header class="cabecero">
+    <nav class="cabecero__nav">
+        <div class="cabecero__izq">
+            <a href="/index.html"><img class="cabecero__img" src="/img/Logo.png" alt="LogoCabecera"></a>
+            <i class="fa-solid fa-magnifying-glass cabecero__lupa"></i>
+            <input class="cabecero__busqueda" type="text" placeholder="¿Qué desea buscar?" maxlength="20">
+        </div>
+        <div class="cabecero__der">
+            <!-- <a href="screens/authentication/login.html"><button id="login" class="cabecero__btn">Login</button></a> -->
+            
+        </div>
+    </nav>
+
+    
+</header>
+
+<!-- HomePage -->
+<body>
+    
+    <section class="banner">
+        <div class="banner__text">
+            <h3 class="banner__text__title">Noviembre Promocional</h3>
+            <p class="banner__text__subtext">Productos seleccionados con 33% de descuento</p>
+            <a href="#consola__list"><button class="banner__text__btn">Ver Consolas</button></a>
+        </div>
+    </section>
+
+    <section class="productos">
+        <!-- <div class="productos__linea">
+            <div class="productos__linea__top">
+                <h2>Star Wars</h2>
+                <a href="/screens/products/index.html"><button class="productos__linea__top__btn">Ver todo<i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            <div class="productos__linea__lista" datos-productos-sw>
+                
+            </div>
+        </div> -->
+
+        <!-- <div class="productos__linea" id="consola__list">
+            <div class="productos__linea__top">
+                <h2>Consolas</h2>
+                <a href="/screens/products/index.html"><button class="productos__linea__top__btn">Ver todo<i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            <div class="productos__linea__lista" datos-productos-consola>
+                
+            </div>
+        </div> -->
+
+        <!-- <div class="productos__linea">
+            <div class="productos__linea__top">
+                <h2>Diversos</h2>
+                <a href="/screens/products/index.html"><button class="productos__linea__top__btn">Ver todo<i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            <div class="productos__linea__lista" datos-productos-diversos>
+                
+            </div>
+        </div> -->
+
+    </section>
+    
+
+
+<!-- <script src="js/app.js"></script> -->
+<script type="module" src="/controllers/productos-controller.js"></script>
+<script type="module" src="/js/app.js"></script>
+<script src="https://kit.fontawesome.com/a2a09fc638.js" crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="pie__pagina">
+    <div class="pie__pagina__top">
+        <div class="pie__pagina__top__content">
+            <img src="img/Logo.png">
+            <div class="pie__pagina__top__links">
+                <a href="#">Quienes somos</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anúncie aquí</a>
+            </div>
+
+            <div class="pie__pagina__top__contacto">
+                <p>Hable con nosotros</p>
+                <form name="form" class="pie__pagina__top__contacto__form" action="https://formspree.io/f/mgeqrvwb" method="POST">     
+                    <!-- <form class="formcontacto__form" name="form" action="https://formspree.io/f/mgeqrvwb" method="POST"> -->
+                    <div class="input__container">
+                        <input class="formcontacto__input" type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="40" 
+                        required data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <div class="textarea__container">
+                        <textarea class="textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"
+                        required data-tipo="mensaje" maxlength="120"></textarea>
+                        <label class="textarea-label" for="mensaje">Escribe tu mensaje</label>
+                        <span class="textarea-message-error">Este campo no es valido</span>
+                    </div>
+
+                    <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="pie__pagina__bot">
+        <p>&copy; Desarrollado por Mauro Cubilla - 2021</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,96 @@
+.textarea {
+    box-sizing: border-box;
+    border-bottom: 2px solid #C8C8C8;
+    padding: 1.5rem 0.8rem;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 3rem;
+    resize: none;
+    height: 82px;
+     
+    background: #FFFFFF;    
+    border-top: #ffffff;
+    border-left: #FFFFFF;
+    border-right: #FFFFFF;
+
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;  
+    color: #464646;
+}
+  
+.textarea__container {    
+    position: relative;    
+    width: 100%;    
+}
+
+.textarea::placeholder {
+    visibility: hidden;
+}
+
+.textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #2A7AE4;
+}
+
+.textarea-label {
+    position: absolute;
+    top: 1.4rem;
+    left: 0.8rem;
+    
+    transition: all 0.25s;
+    color: #A2A2A2;  
+    
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+
+}
+
+.textarea:not(:placeholder-shown) + .textarea-label,
+.textarea:focus + .textarea-label {  
+
+    font-size: 0.75rem;
+    top: 0.30rem;
+    transition: all 0.25s;
+    color: #A2A2A2;    
+}
+
+.textarea-container--invalid {
+    margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalid .textarea {
+    border-bottom: 2px solid #df2525;    
+}
+
+.textarea-container--valid .textarea {    
+    border-bottom: 2px solid rgb(88, 139, 88);    
+}
+
+.textarea-container--invalid .textarea-label {
+    color: #df2525;
+}
+
+.textarea-message-error {
+    display: none;
+    font-size: 13px;  
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.textarea-container--invalid .textarea-message-error {
+    display: block;
+    color: #df2525;
+    padding-left: 0.25rem;
+}

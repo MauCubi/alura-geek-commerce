@@ -1,0 +1,130 @@
+.modal {
+  background-color: var(--contrast-ligth-color);
+  border-radius: 10px;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  max-width: 22.5rem;
+  position: relative;  
+  width: 21rem;
+
+}
+
+.modal-container {
+  background-color: var(--transparency-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.25s;
+  
+}
+
+.modal__title {
+  font-size: var(--font-size-modal-title);
+  color: var(--info-color);
+  margin-bottom: 1rem;
+}
+
+.modal__button {
+  font-size: var(--font-size-modal-button);
+}
+
+.modal__text {
+  margin-bottom: 3.875rem;
+}
+
+.modal__button--confirm {
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+
+.modal__button--confirm:hover{
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+
+.modal__button--confirm:active{
+  position:relative;
+	top:1px;
+}
+
+.modal__button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__close {
+  position: absolute;
+  display: block;
+  /* height: 1rem;
+  width: 1rem; */
+  top: 1.75rem;
+  right: 1.75rem;
+  box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+
+.modal__close:hover {
+  background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+
+.modal--close {
+  left: -100vw;
+  transition: 0.25s;
+
+}
+
+.modal__button--cancel{
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.modal__button--cancel:hover{
+  background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+
+.modal__button--cancel:active{
+  position:relative;
+	top:1px;
+}
