@@ -30,3 +30,30 @@ section.product__add{
 .prod__desc{
     height: 100px;
 }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+
+    .product__add__form{
+        width: 63%;
+    }
+    #img-container{
+        gap: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+    .product__add__form{
+        width: 90%;
+    }
+    #img-container{
+        gap: 10px;
+    }
+
+    #img-label{
+        font-size: 14px;
+        width: 70px;
+        text-align: center;
+    }
+}

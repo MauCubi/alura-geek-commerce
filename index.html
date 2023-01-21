@@ -23,7 +23,7 @@
     <nav class="cabecero__nav">
         <div class="cabecero__izq">
             <a href="./index.html"><img class="cabecero__img" src="./img/Logo.png" alt="LogoCabecera"></a>
-            <i class="fa-solid fa-magnifying-glass cabecero__lupa"></i>
+            <i class="fa-solid fa-magnifying-glass cabecero__lupa" id="lupita"></i>
             <input class="cabecero__busqueda" type="text" placeholder="¿Qué desea buscar?" maxlength="20">
         </div>
         <div class="cabecero__der">
@@ -46,42 +46,11 @@
         </div>
     </section>
 
-    <section class="productos">
-        <!-- <div class="productos__linea">
-            <div class="productos__linea__top">
-                <h2>Star Wars</h2>
-                <a href="/screens/products/index.html"><button class="productos__linea__top__btn">Ver todo<i class="fa-solid fa-arrow-right"></i></button></a>
-            </div>
-            <div class="productos__linea__lista" datos-productos-sw>
-                
-            </div>
-        </div> -->
-
-        <!-- <div class="productos__linea" id="consola__list">
-            <div class="productos__linea__top">
-                <h2>Consolas</h2>
-                <a href="/screens/products/index.html"><button class="productos__linea__top__btn">Ver todo<i class="fa-solid fa-arrow-right"></i></button></a>
-            </div>
-            <div class="productos__linea__lista" datos-productos-consola>
-                
-            </div>
-        </div> -->
-
-        <!-- <div class="productos__linea">
-            <div class="productos__linea__top">
-                <h2>Diversos</h2>
-                <a href="/screens/products/index.html"><button class="productos__linea__top__btn">Ver todo<i class="fa-solid fa-arrow-right"></i></button></a>
-            </div>
-            <div class="productos__linea__lista" datos-productos-diversos>
-                
-            </div>
-        </div> -->
+    <section class="productos">        
 
     </section>
-    
 
 
-<!-- <script src="js/app.js"></script> -->
 <script type="module" src="./controllers/productos-controller.js"></script>
 <script type="module" src="./js/app.js"></script>
 <script src="https://kit.fontawesome.com/a2a09fc638.js" crossorigin="anonymous"></script>
@@ -90,21 +59,25 @@
 
 <footer class="pie__pagina">
     <div class="pie__pagina__top">
-        <div class="pie__pagina__top__content">
-            <img src="./img/Logo.png">
-            <div class="pie__pagina__top__links">
-                <a href="#">Quienes somos</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Programa de fidelidad</a>
-                <a href="#">Nuestras Tiendas</a>
-                <a href="#">Quiero ser franquiciado</a>
-                <a href="#">Anúncie aquí</a>
-            </div>
 
+        <div class="pie__pagina__top__content">
+            <div class="pie__izq">
+                <img src="./img/Logo.png">
+                <div class="pie__pagina__top__links">
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Programa de fidelidad</a>
+                    <a href="#">Nuestras Tiendas</a>
+                    <a href="#">Quiero ser franquiciado</a>
+                    <a href="#">Anúncie aquí</a>
+                </div>
+            </div>
+        
+        
             <div class="pie__pagina__top__contacto">
                 <p>Hable con nosotros</p>
                 <form name="form" class="pie__pagina__top__contacto__form" action="https://formspree.io/f/mgeqrvwb" method="POST">     
-                    <!-- <form class="formcontacto__form" name="form" action="https://formspree.io/f/mgeqrvwb" method="POST"> -->
+                    
                     <div class="input__container">
                         <input class="formcontacto__input" type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="40" 
                         required data-tipo="nombre">
@@ -122,14 +95,14 @@
                     <button type="submit" class="formcontacto__boton">Enviar mensaje</button>
 
                 </div>
-                
             </div>
+            
             
         </div>
     </div>
 
     <div class="pie__pagina__bot">
-        <p>&copy; Desarrollado por Mauro Cubilla - 2021</p>
+        <p>&copy; Desarrollado por Mauro Cubilla - 2022</p>
     </div>
 </footer>
 

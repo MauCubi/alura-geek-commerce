@@ -170,3 +170,148 @@
     font-style: normal;
     font-weight: 400;
 }
+
+
+/*Tablet*/
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+
+    .cabecero{
+        height: 72px;
+        justify-content: center;
+    }
+
+    .cabecero__img {
+        width: 100px;
+        height: 28px;
+    }
+
+    .cabecero__nav{
+        width: 95%;
+    }
+
+    .cabecero__busqueda{        
+        padding: 8px 16px;
+        gap: 8px;
+
+        width: 195px;
+        height: 16px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .cabecero__lupa{
+        left: 220px;
+    }
+
+    .cabecero__btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 10px;
+        width: 100px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .banner{
+        /* background-repeat: no-repeat; */
+        background-image: url('../img/banner-image2.png');
+        
+    }
+       
+    .banner__text__btn{
+        width: 118px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .label-user{
+        font-size: 12px;
+    }
+
+
+    
+}
+    
+
+/*Mobile*/
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+    .cabecero{
+        height: 72px;
+        justify-content: center;
+    }
+
+    .cabecero__img {
+        width: 100px;
+        height: 28px;
+    }
+
+    .cabecero__nav{
+        width: 95%;
+    }
+
+    .cabecero__busqueda{       
+        display: none; 
+    }
+
+    .cabecero__lupa, .fa-solid, .fa-magnifying-glass{
+        display: none;
+    }
+
+    #lupita{
+        display: none;
+    }
+
+    .cabecero__btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 10px;
+        width: 100px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .banner{
+        /* background-repeat: no-repeat; */
+        padding: 10px;
+        height: 192px;
+        background-image: url('../img/banner-image2.png');
+        
+    }
+       
+    .banner__text__btn{
+        width: 115px;
+        height: 32px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .label-user{
+        display: none;
+    }
+
+    .banner__text__title{
+        font-size: 22px;
+    }
+
+    .banner__text__subtext{
+        font-size: 14px;
+    }
+
+    .banner__text{
+        gap: 0px;
+        width: 95%;
+    }
+    
+}

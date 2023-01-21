@@ -26,3 +26,10 @@ section.logpage{
 .btn__login{
     width: 100%;
 }
+
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+    .login__form{
+        width: 80%;
+    }
+}

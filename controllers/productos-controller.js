@@ -192,7 +192,7 @@ if (page == "index.html") {
 const nuevoProductoAdmin = (name, price, imageUrl, section, id) => {
     const card = document.createElement("div");
     const contenido = `        
-            <img src="./${imageUrl}" >
+            <img src="/${imageUrl}" >
             <p class="item__nombre">${name}</p>
             <p class="item__nombre">${section}</p>
             <p class="item__precio">$ ${price}</p>
@@ -344,7 +344,7 @@ const obtenerInformacion = async () => {
             price.value = producto.price;    
             descripcion.value = producto.descripcion;     
             img.value = producto.imageUrl;             
-            document.querySelector("#img-preview").src = `./${producto.imageUrl}`;        
+            document.querySelector("#img-preview").src = `/${producto.imageUrl}`;        
             
             for (let i = 0; i < section.options.length; i++) {                    
                 if (section.options[i].value == producto.section) {
@@ -401,7 +401,7 @@ if (page == "show.html") {
 
             // Datos producto
             const producto = await productoServices.detalleProducto(id);            
-            img.src = `./${producto.imageUrl}`;
+            img.src = `/${producto.imageUrl}`;
             name.innerHTML = producto.name;              
             price.innerHTML = `$ ${producto.price}`;
             desc.innerHTML = producto.descripcion;
