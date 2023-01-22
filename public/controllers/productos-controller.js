@@ -302,8 +302,9 @@ if (page == "product-create.html") {
 if (page == "product-editar.html") {
 
     const user = localStorage.getItem("user");    
+    console.log(user);
     if (!user) {
-        window.location.href = "../authentication/login.html";
+        window.location.href = "/screens/authentication/login.html";
     } else {  
 
     document.querySelector("#img-url").addEventListener("change", (e) => {        
@@ -339,7 +340,8 @@ const obtenerInformacion = async () => {
     document.querySelector("#upload-status").style.display = "none";  
     
     try {
-        const producto = await productoServices.detalleProducto(id)
+        const producto = await productoServices.detalleProducto(id);
+        console.log(producto);
         if (producto.name && producto.section && producto.price && producto.descripcion) {            
             name.value = producto.name;
             price.value = producto.price;    
