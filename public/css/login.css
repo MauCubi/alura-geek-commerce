@@ -1,0 +1,35 @@
+section.logpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30rem;
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;   
+    gap: 25px 0px;
+}
+
+.login__form__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #464646;
+}
+
+.btn__login{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+    .login__form{
+        width: 80%;
+    }
+}
