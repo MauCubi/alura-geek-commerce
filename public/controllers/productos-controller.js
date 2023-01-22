@@ -154,7 +154,8 @@ const renderTodos = (prods) => {
 }
 
 
-if (page == "index.html") {
+if (page == "index.html" || location.pathname == "/") {
+    console.log(document.URL);
     // Funcionalidad de barra de busqueda
     const btnBusqueda = document.querySelector(".cabecero__busqueda");
     btnBusqueda.addEventListener("input", async (e) => {
