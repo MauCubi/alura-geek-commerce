@@ -181,16 +181,11 @@
       "id": "e1d4f3f4-38de-4856-96fa-0c59ca2713f9"
     }
   ],
-  "usuario": [
-    {
-      "email": "dantuchiii@gmail.com",
-      "password": "123456",
-      "id": 1
-    },
+  "usuario": [    
     {
       "email": "test@gmail.com",
       "password": "123456",
-      "id": 2
+      "id": 1
     }
   ]
 }

@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
 
     if (!user) {
         const navDer = document.createElement("a");
-        navDer.href = "screens/authentication/login.html"
+        navDer.href = "/screens/authentication/login.html"
         const content = `<button id="login" class="cabecero__btn">Login</button>`;
         navDer.innerHTML = content;    
         logAdmin.appendChild(navDer);

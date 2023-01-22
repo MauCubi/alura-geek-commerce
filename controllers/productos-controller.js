@@ -9,7 +9,7 @@ var page = path.split("/").pop();
 const nuevoProducto = (name, price, imageUrl, id) => {
     const card = document.createElement("div");
     const contenido = `        
-            <img src="${imageUrl}" >
+            <img src="/${imageUrl}" >
             <p class="item__nombre">${name}</p>
             <p class="item__precio">$ ${price}</p>
             <a href="/screens/products/show.html?id=${id}" class="item__link">Ver Producto</a>    `
