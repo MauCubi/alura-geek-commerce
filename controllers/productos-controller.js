@@ -233,6 +233,7 @@ const renderProductAdmin = async () => {
 }
 
 if (page == "product-index.html") {
+    console.log(document.url);
     const user = localStorage.getItem("user");    
     if (!user) {        
         window.location.href = "../authentication/login.html";

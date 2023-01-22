@@ -1,7 +1,7 @@
 // GET
 
 // Toda la respuesta la almacenamos en un json
-const listaProductos = () => fetch("https://alura-geek.onrender.com/producto").then(respuesta => respuesta.json()); 
+const listaProductos = () => fetch(`${window.location.hostname}/producto`).then(respuesta => respuesta.json()); 
 
 const listaBusqueda = (name) => fetch(`https://alura-geek.onrender.com/producto?name_like=${name}`).then(respuesta => respuesta.json()); 
 

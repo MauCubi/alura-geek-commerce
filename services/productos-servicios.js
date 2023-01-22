@@ -9,7 +9,7 @@ const listaSimilares = (section) => fetch(`http://localhost:3000/producto?sectio
 
 
 const crearProducto = (name, imageUrl, price, section, descripcion) => {
-  console.log("EH");
+  
     return fetch('http://localhost:3000/producto', {
       method: 'POST',
       headers: {
