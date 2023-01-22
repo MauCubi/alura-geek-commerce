@@ -254,7 +254,8 @@ if (page == "product-index.html") {
             
             productoServices.eliminarProducto(id)
             .then( respuesta => { 
-                console.log(respuesta)
+                console.log(respuesta);
+                location.reload();
             })
             .catch(err => alert('Ocurrio un error'));  
         })
@@ -342,6 +343,7 @@ const obtenerInformacion = async () => {
     try {
         const producto = await productoServices.detalleProducto(id);
         console.log(producto);
+        console.log(document.URL);
         if (producto.name && producto.section && producto.price && producto.descripcion) {            
             name.value = producto.name;
             price.value = producto.price;    
@@ -415,7 +417,7 @@ if (page == "show.html") {
 
             similares.forEach(element => {
                 if (element.id != producto.id && lista.getElementsByClassName("productos__linea__lista__item").length < 6) {
-                    lista.appendChild(nuevoProducto(element.name, element.price, `/${element.imageUrl}`, element.id));
+                    lista.appendChild(nuevoProducto(element.name, element.price, element.imageUrl, element.id));
                 }
             })
 
