@@ -1,16 +1,16 @@
 // GET
 
 // Toda la respuesta la almacenamos en un json
-const listaProductos = () => fetch("http://localhost:3000/producto").then(respuesta => respuesta.json()); 
+const listaProductos = () => fetch("https://alura-geek.onrender.com/producto").then(respuesta => respuesta.json()); 
 
-const listaBusqueda = (name) => fetch(`http://localhost:3000/producto?name_like=${name}`).then(respuesta => respuesta.json()); 
+const listaBusqueda = (name) => fetch(`https://alura-geek.onrender.com/producto?name_like=${name}`).then(respuesta => respuesta.json()); 
 
-const listaSimilares = (section) => fetch(`http://localhost:3000/producto?section=${section}`).then(respuesta => respuesta.json()); 
+const listaSimilares = (section) => fetch(`https://alura-geek.onrender.com/producto?section=${section}`).then(respuesta => respuesta.json()); 
 
 
 const crearProducto = (name, imageUrl, price, section, descripcion) => {
   console.log("EH");
-    return fetch('http://localhost:3000/producto', {
+    return fetch('https://alura-geek.onrender.com/producto', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -20,11 +20,11 @@ const crearProducto = (name, imageUrl, price, section, descripcion) => {
   }
 
   const detalleProducto = (id) => {
-    return fetch(`http://localhost:3000/producto/${id}`).then( (respuesta) =>  respuesta.json() );
+    return fetch(`https://alura-geek.onrender.com/producto/${id}`).then( (respuesta) =>  respuesta.json() );
   }
 
   const actualizarProducto = (name, price, imageUrl, section, descripcion, id) => {
-    return fetch(`http://localhost:3000/producto/${id}`, {
+    return fetch(`https://alura-geek.onrender.com/producto/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json'
@@ -36,7 +36,7 @@ const crearProducto = (name, imageUrl, price, section, descripcion) => {
   }
 
 const eliminarProducto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://alura-geek.onrender.com/producto/${id}`, {
     method: 'DELETE'    
   })
 }
