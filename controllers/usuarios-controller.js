@@ -21,7 +21,7 @@ document.querySelector(".login__form").addEventListener("submit", async (e) => {
                 if (obj.email === nombre && obj.password === password) {
                     console.log(obj.email);
                     encontrado = true;
-                    window.location.href = "/public/index.html";
+                    window.location.href = "/index.html";
                     localStorage.setItem("user", JSON.stringify(obj));
                     break;                    
                 }                
